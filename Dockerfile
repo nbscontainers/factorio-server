@@ -1,6 +1,6 @@
 FROM docker.io/alpine:3.21.3 AS downloader
 
-ARG FACTORIO_VERSION=2.0.32
+ARG FACTORIO_VERSION=2.0.39
 
 RUN apk add --no-cache wget tar xz && \
     wget -O factorio_headless_x64_${FACTORIO_VERSION}.tar.xz https://www.factorio.com/get-download/${FACTORIO_VERSION}/headless/linux64 && \
